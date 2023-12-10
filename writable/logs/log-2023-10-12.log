@@ -1,0 +1,74 @@
+CRITICAL - 2023-10-12 02:32:31 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Komen.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Komen')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Komen')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Komen', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 03:16:01 --> "reqired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reqired')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('comment', 'comment', 'web yang baik', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1495): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(751): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Komen.php(28): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 03:16:28 --> "reqired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reqired')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('comment', 'comment', 'web ampas', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1495): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(751): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Komen.php(28): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 03:17:06 --> "reqired" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 317.
+ 1 SYSTEMPATH\Validation\Validation.php(317): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('reqired')
+ 2 SYSTEMPATH\Validation\Validation.php(195): CodeIgniter\Validation\Validation->processRules('comment', 'comment', 'web ampas', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1495): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(751): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Komen.php(28): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->create()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-12 03:24:14 --> mysqli_sql_exception: Unknown column 'nama' in 'order clause' in C:\laragon\www\belajarAPI\rest_ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\belajarAPI\rest_ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\belajarAPI\rest_ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\belajarAPI\rest_ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\belajarAPI\rest_ci4\app\Controllers\Komen.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(919): App\Controllers\Komen->index()
+#8 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+#9 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\belajarAPI\rest_ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-12 03:24:15 --> Unknown column 'nama' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `comentor`
+ORDER BY `nama` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Komen.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

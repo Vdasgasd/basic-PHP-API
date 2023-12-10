@@ -1,0 +1,122 @@
+ERROR - 2023-10-29 16:10:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\belajarAPI\rest_ci4\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\belajarAPI\rest_ci4\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'comment', 3306, '', 0)
+#1 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\belajarAPI\rest_ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\belajarAPI\rest_ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\belajarAPI\rest_ci4\app\Controllers\Komen.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(919): App\Controllers\Komen->index()
+#8 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+#9 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\belajarAPI\rest_ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\belajarAPI\rest_ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\belajarAPI\rest_ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\belajarAPI\rest_ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\belajarAPI\rest_ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\belajarAPI\rest_ci4\app\Controllers\Komen.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(919): App\Controllers\Komen->index()
+#7 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+#8 C:\laragon\www\belajarAPI\rest_ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\belajarAPI\rest_ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-29 16:10:11 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `comentor`
+ORDER BY `id` ASC', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Komen.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:46:11 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 55.
+ 1 APPPATH\Controllers\Komen.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:47:08 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 55.
+ 1 APPPATH\Controllers\Komen.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:47:23 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 55.
+ 1 APPPATH\Controllers\Komen.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:54:15 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:56:21 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:56:59 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 16:59:47 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 17:00:02 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 17:02:06 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 17:02:14 --> Undefined array key "id"
+in APPPATH\Controllers\Komen.php on line 58.
+ 1 APPPATH\Controllers\Komen.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\belajarAPI\\rest_ci4\\app\\Controllers\\Komen.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-29 17:23:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(696): CodeIgniter\Model->update('1', [...])
+ 4 APPPATH\Controllers\Komen.php(64): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

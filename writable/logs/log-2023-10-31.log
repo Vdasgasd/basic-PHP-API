@@ -1,0 +1,20 @@
+CRITICAL - 2023-10-31 16:35:19 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(696): CodeIgniter\Model->update('2', [...])
+ 4 APPPATH\Controllers\Komen.php(64): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 16:35:26 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(696): CodeIgniter\Model->update('2', [...])
+ 4 APPPATH\Controllers\Komen.php(64): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Komen->update('2')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Komen))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
